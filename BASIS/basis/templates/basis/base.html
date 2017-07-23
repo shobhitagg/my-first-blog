@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title> BASIS Tool </title>
+        <link href='//fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/basis.css' %}">		
+	</head>
+	<body>
+		<div class= 'container'>
+			<div class='title'>
+				<h2>BASIS TOOL</h2>
+			</div>
+		{% block content %}
+		{% endblock %}		
+		</div>
+	</body>
+</html>

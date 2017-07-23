@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Home Page</title>
+        <link href='//fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/basis.css' %}">
+	</head>
+	
+	<body>
+		<div class='container'>
+			<div class='welcome'>
+				<center><h1>Welcome to BASIS</h1></center>
+				<p><center>Benchmarking and Single Indicator Solution</center></p>
+			</div>
+			<div class='test'></div>
+			<div class='homebutton1'>
+				<a href={% url 'members' %}><span><center>Members</center></span></a>
+			</div>
+			<div class='homebutton2'>
+				<a href={% url 'guest' %}><span><center>Guest</center></span></a>
+			</div>
+			
+		</div>
+	</body>
+</html>
